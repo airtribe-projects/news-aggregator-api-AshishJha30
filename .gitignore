@@ -1,2 +1,4 @@
 node_modules
 .tap
+.env
+.DS_Store
