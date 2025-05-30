@@ -4,19 +4,37 @@
     "description": "Assignment 2 for backend engineering launchpad",
     "main": "index.js",
     "scripts": {
-      "pretest": "node -e \"if (process.version.slice(1).split('.')[0] < 18) { console.error('Unsupported Node.js version, please use version 18'); process.exit(1); }\"",
-      "test": "tap test/*.js --disable-coverage"
+        "start": "nodemon app.js",
+        "pretest": "node -e \"if (process.version.slice(1).split('.')[0] < 18) { console.error('Unsupported Node.js version, please use version 18'); process.exit(1); }\"",
+        "test": "tap test/*.js --disable-coverage"
     },
     "author": "Airtribe",
     "license": "ISC",
     "devDependencies": {
-      "supertest": "^6.3.4",
-      "tap": "^18.6.1"
+        "supertest": "^6.3.4",
+        "tap": "^18.6.1"
     },
     "dependencies": {
-      "express": "^4.18.2"
+        "axios": "^1.9.0",
+        "bcrypt": "^6.0.0",
+        "dotenv": "^16.5.0",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.15.1",
+        "nodemon": "^3.1.10"
     },
     "engines": {
-      "node": ">= 18.0.0"
-    }
+        "node": ">= 18.0.0"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/airtribe-projects/news-aggregator-api-AshishJha30.git"
+    },
+    "bugs": {
+        "url": "https://github.com/airtribe-projects/news-aggregator-api-AshishJha30/issues"
+    },
+    "homepage": "https://github.com/airtribe-projects/news-aggregator-api-AshishJha30#readme"
 }
